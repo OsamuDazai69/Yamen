@@ -1,44 +1,44 @@
-const Discord = require('discord.js');  //WESO#0001
-const client = new Discord.Client();  //WESO#0001
+const Discord = require('discord.js');  //shinobifighter翼#9786
+const client = new Discord.Client();  //shinobifighter翼#9786
 const moment = require('moment');
-const zalgo = require('zalgolize');  //WESO#0001
-const math = require('math-expression-evaluator');   //WESO#0001 
-const figlet = require('figlet');   //WESO#0001
-const fs = require('fs');  //WESO#0001
-const ms = require('ms');  //WESO#0001
+const zalgo = require('zalgolize');  //shinobifighter翼#9786
+const math = require('math-expression-evaluator');   //shinobifighter翼#9786 
+const figlet = require('figlet');   //shinobifighter翼#9786
+const fs = require('fs');  //shinobifighter翼#9786
+const ms = require('ms');  //shinobifighter翼#9786
 const prefix = '-'
 
-client.on('message', msg => {  //WESO#0001
-    if (msg.content === 'باك') {  //WESO#0001
-      msg.reply('** :wink: وِلِـكُمِـ ﻧَوِرُتْ   :sparkling_heart:**');  //WESO#0001
+client.on('message', msg => {  //
+    if (msg.content === 'باك') {  //shinobifighter翼#9786
+      msg.reply('** :wink: وِلِـكُمِـ ﻧَوِرُتْ   :sparkling_heart:**');  //shinobifighter翼#9786
     }
   });
 
-client.on('message', msg => {  //WESO#0001
-    if (msg.content === 'ويسو') {  //WESO#0001
-      msg.reply('**ويسو مات**');  //WESO#0001
+client.on('message', msg => {  //shinobifighter翼#9786
+    if (msg.content === 'ويسو') {  //shinobifighter翼#9786
+      msg.reply('**ويسو مات**');  //shinobifighter翼#9786
     }
   });
 
 
-client.on('message', msg => {  //WESO#0001
-    if (msg.content === 'احبك') {  //WESO#0001
-      msg.reply('**لاتحتك يا اخوي لو سمحت**');  //WESO#0001
+client.on('message', msg => {  //shinobifighter翼#9786
+    if (msg.content === 'احبك') {  //shinobifighter翼#9786
+      msg.reply('**لاتحتك يا اخوي لو سمحت**');  //shinobifighter翼#9786
     }
   });
   
 
-  client.on('message', msg => {  //WESO#0001
-    if (msg.content === 'احبك') {  //WESO#0001
-      msg.reply('**حبك برص يا سافل**');  //WESO#0001
+  client.on('message', msg => {  //shinobifighter翼#9786
+    if (msg.content === 'احبك') {  //shinobifighter翼#9786
+      msg.reply('**حبك برص يا سافل**');  //shinobifighter翼#9786
     }
   });
 
 
   
-   client.on('message', msg => {  //WESO#0001
-    if (msg.content === 'هلا') {  //WESO#0001
-      msg.reply('**هلا بيك :heart: **');  //WESO#0001
+   client.on('message', msg => {  //shinobifighter翼#9786
+    if (msg.content === 'هلا') {  //shinobifighter翼#9786
+      msg.reply('**هلا بيك :heart: **');  //shinobifighter翼#9786
     }
   });
 
@@ -46,83 +46,83 @@ client.on('message', msg => {  //WESO#0001
 
 
   
-  client.on("message", message => {  //WESO#0001
-    if(message.content.startsWith(prefix + 'v2min')) {  //WESO#0001
-     let args = message.content.split(" ").slice(1);  //WESO#0001
+  client.on("message", message => {  //shinobifighter翼#9786
+    if(message.content.startsWith(prefix + 'v2min')) {  //shinobifighter翼#9786
+     let args = message.content.split(" ").slice(1);  //shinobifighter翼#9786
        var nam = args.join(' ');
     
       if(!message.member.hasPermission('ADMINISTRATOR')) return    message.channel.send('`ADMINISTRATOR` للأسف هذه الخاصية تحتاج الى ').then(msg => msg.delete(6000))
-      if (!nam) return message.channel.send(`<@${message.author.id}> يجب عليك ادخال اسم`).then(msg => msg.delete(10000))  //WESO#0001
-      message.guild.createChannel(nam, 'voice').then(c => setTimeout(() => c.delete(), 120000))   //WESO#0001
+      if (!nam) return message.channel.send(`<@${message.author.id}> يجب عليك ادخال اسم`).then(msg => msg.delete(10000))  //shinobifighter翼#9786
+      message.guild.createChannel(nam, 'voice').then(c => setTimeout(() => c.delete(), 120000))   //shinobifighter翼#9786
       message.channel.send(`:ballot_box_with_check: TemporarySound : \`${nam}\``).then(c => setTimeout(() => c.edit(`<@${message.author.id}> :stopwatch:  انتهى وقت الروم الصوتي`), 120000)) 
     }
     });
 
-client.on("message", message => {    //WESO#0001
-    if(message.content.startsWith(prefix + "emoji")) {   //WESO#0001
-        if(message.author.bot) return;  //WESO#0001
-        var emojiid =  message.content.split(" ").slice(1).join(" ")   //WESO#0001
+client.on("message", message => {    //shinobifighter翼#9786
+    if(message.content.startsWith(prefix + "emoji")) {   //shinobifighter翼#9786
+        if(message.author.bot) return;  //shinobifighter翼#9786
+        var emojiid =  message.content.split(" ").slice(1).join(" ")   //shinobifighter翼#9786
         console.log(emojiid) 
-        if(emojiid.length < "18" || emojiid.length > "18" || isNaN(emojiid)) return  message.channel.send(`- Usage  //WESO#0001
+        if(emojiid.length < "18" || emojiid.length > "18" || isNaN(emojiid)) return  message.channel.send(`- Usage  //shinobifighter翼#9786
 ${prefix}emoji <EmojiID>`); 
         else    
-        message.channel.send("This is the emoji that you requested:-",  //WESO#0001
+        message.channel.send("This is the emoji that you requested:-",  //shinobifighter翼#9786
           { 
-            files: [`https://cdn.discordapp.com/emojis/${emojiid}.png`]  //WESO#0001
+            files: [`https://cdn.discordapp.com/emojis/${emojiid}.png`]  //shinobifighter翼#9786
           }) 
         }  
 })   
 
 
 
- client.on("message", message => {  //WESO#0001
-  if (message.channel.type === "dm") {    //WESO#0001
+ client.on("message", message => {  //shinobifighter翼#9786
+  if (message.channel.type === "dm") {    //shinobifighter翼#9786
 
-      message.channel.startTyping();    //WESO#0001
-      setTimeout(() => {    //WESO#0001
-        message.channel.stopTyping();    //WESO#0001
-      }, Math.random() * (1 - 3) + 1 * 1000);  //WESO#0001
+      message.channel.startTyping();    //shinobifighter翼#9786
+      setTimeout(() => {    //shinobifighter翼#9786
+        message.channel.stopTyping();    //shinobifighter翼#9786
+      }, Math.random() * (1 - 3) + 1 * 1000);  //shinobifighter翼#9786
    
   }  
 });  
 
-const clans = {};  //WESO#0001
-const system = {};  //WESO#0001
-const level = {};  //WESO#0001
+const clans = {};  //shinobifighter翼#9786
+const system = {};  //shinobifighter翼#9786
+const level = {};  //shinobifighter翼#9786
  
  
-client.on('message',async message => {  //WESO#0001
-  if(message.author.bot) return;  //WESO#0001
-  if(message.channel.type === 'dm') return;  //WESO#0001
+client.on('message',async message => {  //shinobifighter翼#9786
+  if(message.author.bot) return;  //shinobifighter翼#9786
+  if(message.channel.type === 'dm') return;  //shinobifighter翼#9786
  
-  let args = message.content.split(' ');  //WESO#0001
-  let random = Math.floor(Math.random() * 5) + 2;  //WESO#0001
+  let args = message.content.split(' ');  //shinobifighter翼#9786
+  let random = Math.floor(Math.random() * 5) + 2;  //shinobifighter翼#9786
   let author = message.author;
  
-  let xpLeft;  //WESO#0001
-  let nameClan;  //WESO#0001
-  let membersClan = [];  //WESO#0001
-  let levelClan = 0;  //WESO#0001
-  if(!system[author.id]) system[author.id] = {clan: 'None',joinedAt: new Date().toLocaleString() ,clanLevel: 0};  //WESO#0001
+  let xpLeft;  //shinobifighter翼#9786
+  let nameClan;  //shinobifighter翼#9786
+  let membersClan = [];  //shinobifighter翼#9786
+  let levelClan = 0;  //shinobifighter翼#9786
+  if(!system[author.id]) system[author.id] = {clan: 'None',joinedAt: new Date().toLocaleString() ,clanLevel: 0};  //shinobifighter翼#9786
  
-  if(!level[author.id]) level[author.id] = {level: 1, xp: 1};  //WESO#0001
+  if(!level[author.id]) level[author.id] = {level: 1, xp: 1};  //shinobifighter翼#9786
  
  
-  level[author.id].xp += (+random);  //WESO#0001
-  if(level[author.id].xp >= 300) {  //WESO#0001
-    if(level[author.id].xp > 300) xpLeft = level[author.id].xp - 300;  //WESO#0001
-    level[author.id] = {  //WESO#0001
-      level: level[author.id].level + 1,  //WESO#0001
-      xp: xpLeft  //WESO#0001
+  level[author.id].xp += (+random);  //shinobifighter翼#9786
+  if(level[author.id].xp >= 300) {  //shinobifighter翼#9786
+    if(level[author.id].xp > 300) xpLeft = level[author.id].xp - 300;  //shinobifighter翼#9786
+    level[author.id] = {  //shinobifighter翼#9786
+      level: level[author.id].level + 1,  //shinobifighter翼#9786
+      xp: xpLeft  //shinobifighter翼#9786
     };
  
   }
-  if(message.content.startsWith(prefix + "clan")) {  //WESO#0001
-    if(message.content.split(' ')[0] !== `${prefix}clan`) return;  //WESO#0001
+  if(message.content.startsWith(prefix + "clan")) {  //shinobifighter翼#9786
+    if(message.content.split(' ')[0] !== `${prefix}clan`) return;  //shinobifighter翼#9786
  
-    if(!args[1] || args[1] && args[1] === 'info') {  //WESO#0001
+    if(!args[1] || args[1] && args[1] === 'info') {  //shinobifighter翼#9786
   let embed = new Discord.RichEmbed()
-  .setAuthor('الكلانات', message.author.avatarURL)  //WESO#0001
+  .setAuthor('الكلانات', message.author.avatarURL)  //shinobifighter翼#9786
   .setDescription(`- \`${prefix}clan\`: نظام الكلانات هو نظام شبه مسلي ينمي التفاعل ويمكنك التحكم بالكلان تبعك بشكل كامل
   - \`${prefix}clan info\`: لأظهار رسالة الأوامر ( هذه الرسالة ) ء
   - \`${prefix}clan create\`: لأنشاء كلان بالأسم الذي تريده
@@ -139,11 +139,11 @@ client.on('message',async message => {  //WESO#0001
   - \`${prefix}clan accept\`: لقبول شخص وجعل الشخص يدخل الكلان ( يتطلب صلاحية الادمن ) ء
   - \`${prefix}clan decline\`: لرفض شخص وعم جعل الشخص يدخل الكلان ( يطلب صلاحية الادمن ) ء
   - \`${prefix}clan room\`: لعمل روم شات او كتابي بأسم الكلان ( صاحب الكلان فقط ) ء`)
-  .setFooter(message.author.username, message.author.avatarURL);  //WESO#0001
+  .setFooter(message.author.username, message.author.avatarURL);  //shinobifighter翼#9786
   message.channel.send(embed);
 }
  
-    if(args[1] && args[1] === 'create') {  //WESO#0001
+    if(args[1] && args[1] === 'create') {  //shinobifighter翼#9786
       if(level[author.id].level < 10) return message.channel.send('**# يجب أن يكون لديك 10 مستويات لعمل كلان , لتجميع مستويات تفاعل بالشات وسيتم حساب النقاط**');
       if(system[author.id].clan !== 'None') return message.channel.send('**# يجب عليك ان تخرج من الكلان الذي أنت به حاليا**');
  
@@ -152,130 +152,130 @@ client.on('message',async message => {  //WESO#0001
         if(collected.first().content.length > 25) return message.channel.send("**# لا يمكنك وضع اسم للكلان يفوق الـ25 حرفا , أعد كابة الأمر**");
         if(collected.first().content.includes("None")) return message.channel.send("**# `None`, لا يمكنك وضع هذه الكلمة كأسم للكلان**");
         collected.first().delete().catch();
-        nameClan = collected.first().content;  //WESO#0001
+        nameClan = collected.first().content;  //shinobifighter翼#9786
       });
  
-      m = await m.edit('**# جارى عمل الكلان**');  //WESO#0001
-      awaited = await setTimeout(async() => {  //WESO#0001
+      m = await m.edit('**# جارى عمل الكلان**');  //shinobifighter翼#9786
+      awaited = await setTimeout(async() => {  //shinobifighter翼#9786
         let membersArray = {
           nameClan: {
             array: []
           }
         };
-        let members = membersArray.nameClan.array;  //WESO#0001
+        let members = membersArray.nameClan.array;  //shinobifighter翼#9786
         members.push(message.author.id);
         clans[nameClan] = {
           name: nameClan,
-          createdAt: new Date().toLocaleString(),  //WESO#0001
+          createdAt: new Date().toLocaleString(),  //shinobifighter翼#9786
           level: levelClan,
-          creator: message.author.id,  //WESO#0001
-          members: members,  //WESO#0001
-          applylist: [],  //WESO#0001
-          admins: []  //WESO#0001  //WESO#0001
+          creator: message.author.id,  //shinobifighter翼#9786
+          members: members,  //shinobifighter翼#9786
+          applylist: [],  //shinobifighter翼#9786
+          admins: []  //shinobifighter翼#9786  //shinobifighter翼#9786
         };
  
-        system[author.id] = {  //WESO#0001
-          clan: nameClan,  //WESO#0001
-          joinedAt: new Date().toLocaleString(),  //WESO#0001
-          clanLevel: 0,  //WESO#0001
-          creator: message.author.id  //WESO#0001
+        system[author.id] = {  //shinobifighter翼#9786
+          clan: nameClan,  //shinobifighter翼#9786
+          joinedAt: new Date().toLocaleString(),  //shinobifighter翼#9786
+          clanLevel: 0,  //shinobifighter翼#9786
+          creator: message.author.id  //shinobifighter翼#9786
         };
  
-        m = await m.edit('**# تم عمل الكلان بنجاح**');  //WESO#0001
+        m = await m.edit('**# تم عمل الكلان بنجاح**');  //shinobifighter翼#9786
       }, 2300);
  
     }
-    if(args[1] && args[1] === 'invite') {  //WESO#0001
-      if(!system[author.id]) return message.channel.send("**# أنت لست بكلان**");  //WESO#0001
+    if(args[1] && args[1] === 'invite') {  //shinobifighter翼#9786
+      if(!system[author.id]) return message.channel.send("**# أنت لست بكلان**");  //shinobifighter翼#9786
       let clan = system[author.id].clan;
-      if(system[author.id].clan === 'None') return message.channel.send('**# أنت لست بكلان**');  //WESO#0001
+      if(system[author.id].clan === 'None') return message.channel.send('**# أنت لست بكلان**');  //shinobifighter翼#9786
       if(!clans[clan].admins.includes(message.author.id) && clans[system[author.id].clan].creator !== message.author.id) return message.channel.send('**# يجب عليك ان تكون اداري بالكلان**');
-      let mention = message.mentions.users.first();  //WESO#0001
-      if(!mention) return message.channel.send('**# منشن شخص لدعوته للكلان**');  //WESO#0001
-      if(clans[clan].members.includes(mention.id)) return message.channel.send("**# هذا العضو بالكلان بالفعل**");  //WESO#0001
-      if(clans[clan].members.length === 10) return message.channel.send("**# هذا الكلان وصل للحد الاقصى من الاعضاء يمكنك**");  //WESO#0001
-   //WESO#0001  //WESO#0001  //WESO#0001  //WESO#0001  //WESO#0001
+      let mention = message.mentions.users.first();  //shinobifighter翼#9786
+      if(!mention) return message.channel.send('**# منشن شخص لدعوته للكلان**');  //shinobifighter翼#9786
+      if(clans[clan].members.includes(mention.id)) return message.channel.send("**# هذا العضو بالكلان بالفعل**");  //shinobifighter翼#9786
+      if(clans[clan].members.length === 10) return message.channel.send("**# هذا الكلان وصل للحد الاقصى من الاعضاء يمكنك**");  //shinobifighter翼#9786
+   //shinobifighter翼#9786  //shinobifighter翼#9786  //shinobifighter翼#9786  //shinobifighter翼#9786  //shinobifighter翼#9786
       let m = await message.channel.send(`**${mention} # \`${clan}\`, تم دعوتك لدخول الكلان**\n\n - لقبول الدعوة \`نعم\`\n - لرفض الدعوة \`لا\``);
       let awaiting = await message.channel.awaitMessages(r => r.author.id === mention.id, {max: 1, time: 20000, errors:['time']}).then(collected => {
-        collected.first().delete().catch();  //WESO#0001
-        if(collected.first().content === 'نعم') {  //WESO#0001
-          clans[clan].members.push(mention.id);  //WESO#0001
+        collected.first().delete().catch();  //shinobifighter翼#9786
+        if(collected.first().content === 'نعم') {  //shinobifighter翼#9786
+          clans[clan].members.push(mention.id);  //shinobifighter翼#9786
  
-          system[author.id].members += 1;  //WESO#0001
+          system[author.id].members += 1;  //shinobifighter翼#9786
  
  
-          system[mention.id] = {  //WESO#0001
+          system[mention.id] = {  //shinobifighter翼#9786
             clan: clan,
-            joinedAt: new Date().toLocaleString(),  //WESO#0001
+            joinedAt: new Date().toLocaleString(),  //shinobifighter翼#9786
             clanLevel: 0,
-            creator: clans[clan].creator  //WESO#0001
+            creator: clans[clan].creator  //shinobifighter翼#9786
           };
  
-          message.channel.send(`**${message.author} # تم قبول الدعوة**`);  //WESO#0001
-        }  //WESO#0001
-        if(collected.first().content === 'لا') {  //WESO#0001
-          message.channel.send(`**${message.author} # تم رفض الدعوة**`);  //WESO#0001
-        } else if(collected.first().content !== 'نعم' && collected.first().content !== 'لا'){  //WESO#0001
-          return message.channel.send('**# يجب عليك كتابة `نعم` أو `لا`**');  //WESO#0001
-        }  //WESO#0001
-      });  //WESO#0001
-    }  //WESO#0001
+          message.channel.send(`**${message.author} # تم قبول الدعوة**`);  //shinobifighter翼#9786
+        }  //shinobifighter翼#9786
+        if(collected.first().content === 'لا') {  //shinobifighter翼#9786
+          message.channel.send(`**${message.author} # تم رفض الدعوة**`);  //shinobifighter翼#9786
+        } else if(collected.first().content !== 'نعم' && collected.first().content !== 'لا'){  //shinobifighter翼#9786
+          return message.channel.send('**# يجب عليك كتابة `نعم` أو `لا`**');  //shinobifighter翼#9786
+        }  //shinobifighter翼#9786
+      });  //shinobifighter翼#9786
+    }  //shinobifighter翼#9786
     if(args[1] && args[1] === 'stats') {
-      if(system[author.id].clan === 'None') return message.channel.send('**# يجب ان تكون بكلان لأستخدام هذا الأمر**');  //WESO#0001
-      let clan = system[author.id].clan;  //WESO#0001
-      let embed = new Discord.RichEmbed()  //WESO#0001
-        .setAuthor(`${message.author.username} || الكلانات`, message.author.avatarURL)  //WESO#0001
-        .setDescription(`الكلان || \`${clan.toString()}\``)  //WESO#0001
-        embed.addField('» اسم الكلان', clan, true)  //WESO#0001
-        embed.addField('» تاريخ عمل الكلان', clans[clan].createdAt, true);  //WESO#0001
-        embed.addField('» تاريخ دخول الكلان', system[author.id].joinedAt, true)  //WESO#0001
-        embed.addField('» صاحب الكلان', `<@${clans[clan].creator}>`, true);  //WESO#0001
-        embed.addField('» لفل الكلان', clans[clan].level, true);  //WESO#0001
-        embed.addField('» عدد اعضاء الكلان', clans[clan].members.length, true);  //WESO#0001
-        embed.addField('» عدد التقديمات للكلان', clans[clan].applylist.length, true);  //WESO#0001
-        embed.addField('» عدد الادمنية بالكلان', clans[clan].admins.length, true);  //WESO#0001
-        embed.addField('» اعضاء الكلان', `${prefix}clan list || يظهرلك رسالة بها اعضاء الكلان`);  //WESO#0001
-      message.channel.send(embed);  //WESO#0001
+      if(system[author.id].clan === 'None') return message.channel.send('**# يجب ان تكون بكلان لأستخدام هذا الأمر**');  //shinobifighter翼#9786
+      let clan = system[author.id].clan;  //shinobifighter翼#9786
+      let embed = new Discord.RichEmbed()  //shinobifighter翼#9786
+        .setAuthor(`${message.author.username} || الكلانات`, message.author.avatarURL)  //shinobifighter翼#9786
+        .setDescription(`الكلان || \`${clan.toString()}\``)  //shinobifighter翼#9786
+        embed.addField('» اسم الكلان', clan, true)  //shinobifighter翼#9786
+        embed.addField('» تاريخ عمل الكلان', clans[clan].createdAt, true);  //shinobifighter翼#9786
+        embed.addField('» تاريخ دخول الكلان', system[author.id].joinedAt, true)  //shinobifighter翼#9786
+        embed.addField('» صاحب الكلان', `<@${clans[clan].creator}>`, true);  //shinobifighter翼#9786
+        embed.addField('» لفل الكلان', clans[clan].level, true);  //shinobifighter翼#9786
+        embed.addField('» عدد اعضاء الكلان', clans[clan].members.length, true);  //shinobifighter翼#9786
+        embed.addField('» عدد التقديمات للكلان', clans[clan].applylist.length, true);  //shinobifighter翼#9786
+        embed.addField('» عدد الادمنية بالكلان', clans[clan].admins.length, true);  //shinobifighter翼#9786
+        embed.addField('» اعضاء الكلان', `${prefix}clan list || يظهرلك رسالة بها اعضاء الكلان`);  //shinobifighter翼#9786
+      message.channel.send(embed);  //shinobifighter翼#9786
  
     }
-    if(args[1] && args[1] === 'join') {  //WESO#0001  //WESO#0001
-    let clanName = message.content.split(' ').slice(2).join(" ");  //WESO#0001
-    if(system[author.id].clan !== 'None') return message.channel.send("**# يجب أن لا تكون بكلان**");  //WESO#0001
-    if(!args[2]) return message.channel.send("**# يجب عليك كتابة اسم الكلان**");  //WESO#0001
-    if(!clans[clanName]) return message.channel.send("**# هذا الكلان غير موجود**");  //WESO#0001
-    if(clans[clanName].applylist.includes(message.author.id)) return message.channel.send("**# لقد قدمت على دخول هذا الكلان مسبقا");  //WESO#0001
-   //WESO#0001  //WESO#0001  //WESO#0001
-    clans[clanName].applylist.push(message.author.id);  //WESO#0001
-    message.channel.send("**# لقد تم التقديم على دخول الكلان , سيتم الرد عليك من قبل احد ادارة الكلان**");  //WESO#0001
+    if(args[1] && args[1] === 'join') {  //shinobifighter翼#9786  //shinobifighter翼#9786
+    let clanName = message.content.split(' ').slice(2).join(" ");  //shinobifighter翼#9786
+    if(system[author.id].clan !== 'None') return message.channel.send("**# يجب أن لا تكون بكلان**");  //shinobifighter翼#9786
+    if(!args[2]) return message.channel.send("**# يجب عليك كتابة اسم الكلان**");  //shinobifighter翼#9786
+    if(!clans[clanName]) return message.channel.send("**# هذا الكلان غير موجود**");  //shinobifighter翼#9786
+    if(clans[clanName].applylist.includes(message.author.id)) return message.channel.send("**# لقد قدمت على دخول هذا الكلان مسبقا");  //shinobifighter翼#9786
+   //shinobifighter翼#9786  //shinobifighter翼#9786  //shinobifighter翼#9786
+    clans[clanName].applylist.push(message.author.id);  //shinobifighter翼#9786
+    message.channel.send("**# لقد تم التقديم على دخول الكلان , سيتم الرد عليك من قبل احد ادارة الكلان**");  //shinobifighter翼#9786
  
   }
-    if(args[1] && args[1] === 'accept') {  //WESO#0001
+    if(args[1] && args[1] === 'accept') {  //shinobifighter翼#9786
       let mention = message.mentions.users.first();
-      if(system[author.id].clan === 'None') return message.channel.send("**# يجب عليك ان تكون بكلان لأستخدام هذا الأمر**");  //WESO#0001
+      if(system[author.id].clan === 'None') return message.channel.send("**# يجب عليك ان تكون بكلان لأستخدام هذا الأمر**");  //shinobifighter翼#9786
       if(!clans[system[author.id].clan].admins.includes(message.author.id) && clans[system[author.id].clan].creator !== message.author.id) return message.channel.send("**# يجب عليك ان تكون اداري بالكلان لأستخدام هذا الأمر**");
       if(!mention) return message.channel.send("**# يجب عليك منشنة شخص لأستخدام هذا الأمر**");
-      if(!system[mention.id]) system[mention.id] = {clan: 'None',joinedAt: new Date().toLocaleString() ,clanLevel: 0};  //WESO#0001
+      if(!system[mention.id]) system[mention.id] = {clan: 'None',joinedAt: new Date().toLocaleString() ,clanLevel: 0};  //shinobifighter翼#9786
  
       if(!clans[system[author.id].clan].applylist.includes(mention.id)) return message.channel.send("**# هذا الشخص لم يقم بالتقديم على دخول الكلان**");
  
-      clans[system[author.id].clan].applylist.shift(mention.id);  //WESO#0001
-      clans[system[author.id].clan].members.push(mention.id);  //WESO#0001
-      let clan = system[author.id].clan;  //WESO#0001
+      clans[system[author.id].clan].applylist.shift(mention.id);  //shinobifighter翼#9786
+      clans[system[author.id].clan].members.push(mention.id);  //shinobifighter翼#9786
+      let clan = system[author.id].clan;  //shinobifighter翼#9786
  
  
-      system[mention.id] = {  //WESO#0001
+      system[mention.id] = {  //shinobifighter翼#9786
         clan: clan,
-        joinedAt: new Date().toLocaleString(),  //WESO#0001
+        joinedAt: new Date().toLocaleString(),  //shinobifighter翼#9786
         clanLevel: 0,
-        creator: clans[clan].creator  //WESO#0001
-      };  //WESO#0001
-   //WESO#0001
+        creator: clans[clan].creator  //shinobifighter翼#9786
+      };  //shinobifighter翼#9786
+   //shinobifighter翼#9786
  
-      mention.send(`**# \`${system[author.id].clan}\`, لقد تم قبولك بالكلان**`).catch();  //WESO#0001
-      message.channel.send(`**# \`${mention.username}\`, لقد تم قبول الشخص ودخوله للكلان**`);  //WESO#0001
-    }  //WESO#0001
-    if(args[1] && args[1] === 'decline') {  //WESO#0001
-      let mention = message.mentions.users.first();  //WESO#0001
+      mention.send(`**# \`${system[author.id].clan}\`, لقد تم قبولك بالكلان**`).catch();  //shinobifighter翼#9786
+      message.channel.send(`**# \`${mention.username}\`, لقد تم قبول الشخص ودخوله للكلان**`);  //shinobifighter翼#9786
+    }  //shinobifighter翼#9786
+    if(args[1] && args[1] === 'decline') {  //shinobifighter翼#9786
+      let mention = message.mentions.users.first();  //shinobifighter翼#9786
       if(system[author.id].clan === 'None') return message.channel.send("**# يجب عليك ان تكون بكلان لأستخدام هذا الأمر**");
       if(!clans[system[author.id].clan].admins.includes(message.author.id) && clans[system[author.id].clan].creator !== message.author.id) return message.channel.send("**# يجب عليك ان تكون اداري بالكلان لأستخدام هذا الأمر**");
       if(!mention) return message.channel.send("**# يجب عليك منشنة شخص لأستخدام هذا الأمر**");
@@ -285,16 +285,16 @@ client.on('message',async message => {  //WESO#0001
  
       clans[system[author.id].clan].applylist.shift(mention.id);
  
-      system[mention.id] = {  //WESO#0001
-        clan: clans[system[author.id].clan],  //WESO#0001
+      system[mention.id] = {  //shinobifighter翼#9786
+        clan: clans[system[author.id].clan],  //shinobifighter翼#9786
         joinedAt: new Date().toLocaleString(),
-        clanLevel: 0  //WESO#0001
+        clanLevel: 0  //shinobifighter翼#9786
       };
  
  
-      mention.send(`**# \`${system[author.id].clan}\`, لقد تم رفض دخولك للكلان**`).catch();  //WESO#0001
-      message.channel.send(`**# \`${mention.username}\`, لقد تم رفض دخول الشخص للكلان**`);  //WESO#0001
-   //WESO#0001
+      mention.send(`**# \`${system[author.id].clan}\`, لقد تم رفض دخولك للكلان**`).catch();  //shinobifighter翼#9786
+      message.channel.send(`**# \`${mention.username}\`, لقد تم رفض دخول الشخص للكلان**`);  //shinobifighter翼#9786
+   //shinobifighter翼#9786
     }
     if(args[1] && args[1] === 'promote') {
       let mention = message.mentions.users.first();
@@ -303,30 +303,30 @@ client.on('message',async message => {  //WESO#0001
       if(!mention) return message.channel.send("**# يجب عليك منشنة عضو بالكلان لأعطائه الترقية**");
       if(!system[mention.id]) system[mention.id] = {clan: 'None',joinedAt: new Date().toLocaleString() ,clanLevel: 0};
  
-      if(system[mention.id].clan === 'None') return message.channel.send("**# هذا الشخص ليس بكلان**");  //WESO#0001
-      if(!clans[system[author.id].clan].members.includes(mention.id)) return message.channel.send("**# هذا الشخص ليس بالكلان**");  //WESO#0001
-      if(clans[system[author.id].clan].admins.includes(mention.id)) return message.channel.send("**# هذا العضو لديه ادمن بالفعل**");  //WESO#0001
-      if(mention.id === message.author.id) return message.channel.send("**# لا يمكنك اعطاء نفسك ترقية**");  //WESO#0001
+      if(system[mention.id].clan === 'None') return message.channel.send("**# هذا الشخص ليس بكلان**");  //shinobifighter翼#9786
+      if(!clans[system[author.id].clan].members.includes(mention.id)) return message.channel.send("**# هذا الشخص ليس بالكلان**");  //shinobifighter翼#9786
+      if(clans[system[author.id].clan].admins.includes(mention.id)) return message.channel.send("**# هذا العضو لديه ادمن بالفعل**");  //shinobifighter翼#9786
+      if(mention.id === message.author.id) return message.channel.send("**# لا يمكنك اعطاء نفسك ترقية**");  //shinobifighter翼#9786
  
-      clans[system[author.id].clan].admins.push(mention.id);  //WESO#0001
+      clans[system[author.id].clan].admins.push(mention.id);  //shinobifighter翼#9786
  
  
-      mention.send(`**# \`${system[author.id].clan}\`, لقد تم ترقيتك الى ادمن**`).catch();  //WESO#0001
-      message.channel.send(`**# \`${mention.username}\`, لقد تم ترقية العضو الى رتبة ادمن**`);  //WESO#0001
-    }  //WESO#0001
-    if(args[1] && args[1] === 'demote') {  //WESO#0001
-      let mention = message.mentions.users.first();  //WESO#0001
-      if(system[author.id].clan === 'None') return message.channel.send("**# يجب ان تكون بكلان لأستخدام هذا الأمر**");  //WESO#0001
-      if(clans[system[author.id].clan].creator !== message.author.id) return message.channel.send("**# هذا الأمر لضاحب الكلان فقط**");  //WESO#0001
-      if(!mention) return message.channel.send("**# يجب عليك منشنة عضو بالكلان لأعطائه الترقية**");  //WESO#0001
-      if(!system[mention.id]) system[mention.id] = {clan: 'None',joinedAt: new Date().toLocaleString() ,clanLevel: 0};  //WESO#0001
-   //WESO#0001
-      if(system[mention.id].clan === 'None') return message.channel.send("**# هذا الشخص ليس بكلان**");  //WESO#0001
-      if(!clans[system[author.id].clan].members.includes(mention.id)) return message.channel.send("**# هذا الشخص ليس بالكلان**");  //WESO#0001
-      if(!clans[system[author.id].clan].admins.includes(mention.id)) return message.channel.send("**# هذا الشخص ليس ادمن بالكلان**");  //WESO#0001
-      if(mention.id === message.author.id) return message.channel.send("**# لا يمكنك اعطاء نفسك ترقية**");  //WESO#0001
-   //WESO#0001
-      clans[system[author.id].clan].admins.shift(mention.id);  //WESO#0001
+      mention.send(`**# \`${system[author.id].clan}\`, لقد تم ترقيتك الى ادمن**`).catch();  //shinobifighter翼#9786
+      message.channel.send(`**# \`${mention.username}\`, لقد تم ترقية العضو الى رتبة ادمن**`);  //shinobifighter翼#9786
+    }  //shinobifighter翼#9786
+    if(args[1] && args[1] === 'demote') {  //shinobifighter翼#9786
+      let mention = message.mentions.users.first();  //shinobifighter翼#9786
+      if(system[author.id].clan === 'None') return message.channel.send("**# يجب ان تكون بكلان لأستخدام هذا الأمر**");  //shinobifighter翼#9786
+      if(clans[system[author.id].clan].creator !== message.author.id) return message.channel.send("**# هذا الأمر لضاحب الكلان فقط**");  //shinobifighter翼#9786
+      if(!mention) return message.channel.send("**# يجب عليك منشنة عضو بالكلان لأعطائه الترقية**");  //shinobifighter翼#9786
+      if(!system[mention.id]) system[mention.id] = {clan: 'None',joinedAt: new Date().toLocaleString() ,clanLevel: 0};  //shinobifighter翼#9786
+   //shinobifighter翼#9786
+      if(system[mention.id].clan === 'None') return message.channel.send("**# هذا الشخص ليس بكلان**");  //shinobifighter翼#9786
+      if(!clans[system[author.id].clan].members.includes(mention.id)) return message.channel.send("**# هذا الشخص ليس بالكلان**");  //shinobifighter翼#9786
+      if(!clans[system[author.id].clan].admins.includes(mention.id)) return message.channel.send("**# هذا الشخص ليس ادمن بالكلان**");  //shinobifighter翼#9786
+      if(mention.id === message.author.id) return message.channel.send("**# لا يمكنك اعطاء نفسك ترقية**");  //shinobifighter翼#9786
+   //shinobifighter翼#9786
+      clans[system[author.id].clan].admins.shift(mention.id);  //shinobifighter翼#9786
  
       mention.send(`**# \`${system[author.id].clan}\`, لقد تم ازالتك من منصب الادمن**`).catch();
       message.channel.send(`**# \`${mention.username}\`, لقد تم ازالة الادمنية من العضو**`);
@@ -879,7 +879,7 @@ client.on('ready', function(){
             j = -1;
         }
         i = i+j;
-        client.user.setGame(setGame[i],`http://www.twitch.tv/blu4egam3r`);
+        client.user.setGame(setGame[i],`https://www.twitch.tv/yam3nx`);
     }, ms);
   console.log(`Logged in as ${client.user.tag}!`);
   console.log('')
@@ -2696,7 +2696,7 @@ client.on('message', message => {
     message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
         } else    
   if (message.content.startsWith(adminprefix + 'st')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/idk");
+    client.user.setGame(argresult, "https://www.twitch.tv/yam3nx");
       message.channel.sendMessage(`**:white_check_mark:   ${argresult}**`)
     }
  
@@ -3076,17 +3076,6 @@ client.on('message' , message => {
   message.channel.send(embed);
 }
 });
-  
-client.on('typingStart', (ch, user) => {
-      if(user.presence.status === 'offline') {
-
-          ch.send(`${user}☹ هاهاهاا , كشفتك وانت تكتب ي اوف لاين✉`)
-          .then(msg => {
-              msg.delete(10000)
-          })
-      }
-  })
-
 
    
    client.on('message', message => {
@@ -3681,7 +3670,7 @@ reaction1.on("collect", r => {
 『-rules ====> يعرض لك قوانين السيرفر
 『-v2min ====> لصنع روم صوتي مؤقت
 『-inv ====> لدعوة البوت الى سيرفرك
-『 By ====> WESO#0001
+『 By ====> shinobifighter翼#9786
 **
 `)
    message.author.sendEmbed(embed)
@@ -3739,7 +3728,7 @@ reaction2.on("collect", r => {
 『-unmutechannel ====> فتح الشات
 『-ct <name> ====> انشاء شات
 『-cv <name> ====> انشاء رووم فويس
-『 By ====> WESO#0001
+『 By ====> shinobifighter翼#9786
 **
 `)
    message.author.sendEmbed(embed)
@@ -3747,7 +3736,7 @@ reaction2.on("collect", r => {
 })
 reaction3.on("collect", r => {
   const embed = new Discord.RichEmbed()
-  .setThumbnail('https://images-ext-1.discordapp.net/external/4IGqoA1bqVqu_o2I-jY51fqJFy2S8f8NrzcnzxhFtVU/http/reli.sh/wp-content/themes/relish/assets/img/services/icon-games.png')
+  .setThumbnail('https://cdn.discordapp.com/icons/746401833924427806/a_d9eb88c8bd2b9b20f4688b60d37290d3.gif?size=4096')
       .setColor("#000000")
       .setDescription(`
        :video_game: ***__اوامر العاب__***:game_die:
@@ -3777,7 +3766,7 @@ reaction3.on("collect", r => {
 『-لعبة مريم ====> مريم
 『-عواصم
 『-يعطيك عقابات قاسية ====> عقاب
-『 By ====> WESO#0001
+『 By ====> shinobifighter翼#9786
 `)
    message.author.sendEmbed(embed)
    message.reply('تم ارسالك بلخاص')
@@ -3785,16 +3774,8 @@ reaction3.on("collect", r => {
 reaction3.on("collect", r => {
   const embed = new Discord.RichEmbed()
       .setColor("#000000")
-      .setDescription(`
-            -=- الرومات اللازمة للبوت -=-
-『=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.』
-تحتاج رومات بالاسماء التالية
-Weclom روم الترحيب
-suggestions روم الاقتراحات
-'روم 'التقديمات 
-روم التوديع leave
-『=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.』
-`)
+      .setDescription
+	  
    message.author.sendEmbed(embed)
 })
     })
@@ -4349,14 +4330,33 @@ client.on("message", message => {
          .setDescription(`
   ●▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬●
 [ ★・rules   |  قوانين السيرفر  ]
-1) ممنوع السب مع اى سبب 
-2)ممنوع الحديث عن الدين او سبه او مفاوضات دينيه 
-5)ممنوع التحدث عن السياسه  "
-6)ممنوع الصور الاباحيه او اى شي مخل بالادب 
-7)ممنوع نشر صور من  مواقع التواصل الاجتماعى  بحقوق ملكيه
-8)ممنوع طلب الرتبه والرتب تكون بالتفاعل
-9)لاستخدام البوت  فى - #cmd
-__
+
+1- احترم الجميع ولاتزعج احد بالرسائل او بالخاص 
+
+2- لاتسب او تكفر او تتكلم بالسياسة او بالعنصرية او كلام وسخ او بالدين ممنوعة منعاً باتاً وحيسببلك باند نهائي !!
+
+3- ممنوع الاعلانات لجروبات تانية او لصفحات او قنوات !!
+
+4- ممنوع السبام ( ترسل رسائل متكررة ) لان البوت رح يعطيك تايم اوت !!
+
+5- ممنوع ارسال صور او فيديوهات في الشات العام !!
+
+6- ممنوع طلب فلوس او كروت او تقول لشخص اشحنلي لو تسويه رح تنطرد !!
+
+7- ممنوع تزعج المشرفين في الخاص او في الشات !!
+
+8- ممنوع ازعاج الناس في الرومات الصوتية ولو احد يسوي هيك بلغ المشرفين وحينطرد !!
+
+9- ممنوع منعاً باتاً طلب رتبة في السيرفر ( الرتبة تعطى حسب تفاعلك في السيرفر ) !!
+
+
+<#746406836772536352> كم وصلت في هذا الروم #🏆-اللـــفـــل 
+
+10- ممنوع بيع وشراء حسابات او بطاقات او اي شيء من داخل السيرفر نهائيا .. النتيجة باند ابدي !!
+
+ مجرد ماتخالف القوانين حيجيك تحذير بالبداية بعدها باند نهائي 
+
+ومـــنـــوريــــن جــــمــــيــــعــــا وفــــي أمــــان الـــلـــه
 
 @everyone || @here
 ●▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬●
