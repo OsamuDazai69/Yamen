@@ -879,7 +879,7 @@ client.on('ready', function(){
             j = -1;
         }
         i = i+j;
-        client.user.setGame(setGame[i],`https://www.twitch.tv/yam3nx`);
+        client.user.setGame(setGame[i],`https://www.youtube.com/channel/UCGNtBdh7E_0_7mS3gdtsXdg`);
     }, ms);
   console.log(`Logged in as ${client.user.tag}!`);
   console.log('')
@@ -2696,7 +2696,7 @@ client.on('message', message => {
     message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
         } else    
   if (message.content.startsWith(adminprefix + 'st')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/yam3nx");
+    client.user.setGame(argresult, "https://www.youtube.com/channel/UCGNtBdh7E_0_7mS3gdtsXdg");
       message.channel.sendMessage(`**:white_check_mark:   ${argresult}**`)
     }
  
