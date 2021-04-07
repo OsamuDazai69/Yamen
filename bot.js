@@ -868,7 +868,7 @@ client.on('message', PuP => {
 
 client.on('ready', function(){
     var ms = 10000 ;
-    var setGame = [' -help',`Im on ${client.guilds.size} servers`,`i help ${client.users.size} Members`,' BAD Is The Best ','Just Do It'];
+    var setGame = [' -help',`Im on ${client.guilds.size} servers`,`i help ${client.users.size} Members`,' اشتركو بقناة يامن ','Yamen Gamer99'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -3638,7 +3638,7 @@ let reaction3 = msg.createReactionCollector(reaction3Filter, { time: 18000 });
 let reaction4 = msg.createReactionCollector(reaction4Filter, { time: 18000 });
 reaction1.on("collect", r => {
   const embed = new Discord.RichEmbed()
-      .setThumbnail('https://images-ext-2.discordapp.net/external/JD7xvknBVacXHoC2re78AtJN4PUY5IjUZy1uWIqzObI/https/s3.amazonaws.com/eclincher.wp.upload/wp-content/uploads/2015/08/25155834/people-icon.png')
+      .setThumbnail('https://cdn.discordapp.com/icons/746401833924427806/a_d9eb88c8bd2b9b20f4688b60d37290d3.gif?size=4096')
       .setColor("#000000")
       .setDescription(`
       :busts_in_silhouette:***__اوامر عامة__***:loudspeaker: 
@@ -3678,7 +3678,7 @@ reaction1.on("collect", r => {
 })
 reaction2.on("collect", r => {
       const embed = new Discord.RichEmbed()
-  .setThumbnail('https://cdn.discordapp.com/attachments/553862087382925313/556036868492230667/logo-admin-png-4.png')
+  .setThumbnail('https://cdn.discordapp.com/icons/746401833924427806/a_d9eb88c8bd2b9b20f4688b60d37290d3.gif?size=4096')
       .setColor("#000000")
       .setDescription(`
       :key:***__اوامر ادارية__***:crown: 
