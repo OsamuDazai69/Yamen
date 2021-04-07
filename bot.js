@@ -879,7 +879,7 @@ client.on('ready', function(){
             j = -1;
         }
         i = i+j;
-        client.user.setGame(setGame[i],`https://www.youtube.com/channel/UCGNtBdh7E_0_7mS3gdtsXdg`);
+        client.user.setGame(setGame[i],`https://www.twitch.tv/yam3nx`);
     }, ms);
   console.log(`Logged in as ${client.user.tag}!`);
   console.log('')
@@ -2696,7 +2696,7 @@ client.on('message', message => {
     message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
         } else    
   if (message.content.startsWith(adminprefix + 'st')) {
-    client.user.setGame(argresult, "https://www.youtube.com/channel/UCGNtBdh7E_0_7mS3gdtsXdg");
+    client.user.setGame(argresult, "https://www.twitch.tv/yam3nx");
       message.channel.sendMessage(`**:white_check_mark:   ${argresult}**`)
     }
  
@@ -3670,7 +3670,8 @@ reaction1.on("collect", r => {
 『-rules ====> يعرض لك قوانين السيرفر
 『-v2min ====> لصنع روم صوتي مؤقت
 『-inv ====> لدعوة البوت الى سيرفرك
-『 By ====> shinobifighter翼#9786
+『 By ====> <@544688812870336527>
+<@366163027847938048>
 **
 `)
    message.author.sendEmbed(embed)
@@ -3728,7 +3729,8 @@ reaction2.on("collect", r => {
 『-unmutechannel ====> فتح الشات
 『-ct <name> ====> انشاء شات
 『-cv <name> ====> انشاء رووم فويس
-『 By ====> shinobifighter翼#9786
+『 By ====> <@544688812870336527>
+<@366163027847938048>
 **
 `)
    message.author.sendEmbed(embed)
@@ -3766,7 +3768,8 @@ reaction3.on("collect", r => {
 『-لعبة مريم ====> مريم
 『-عواصم
 『-يعطيك عقابات قاسية ====> عقاب
-『 By ====> shinobifighter翼#9786
+『 By ====> <@544688812870336527>
+<@366163027847938048>
 `)
    message.author.sendEmbed(embed)
    message.reply('تم ارسالك بلخاص')
